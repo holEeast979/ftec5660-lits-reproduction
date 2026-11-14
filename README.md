@@ -18,11 +18,12 @@ The lower cap did not reduce work because the default early-stop setting ended e
 - `REPORT_DRAFT.md`: complete written report.
 - `PRESENTATION_SCRIPT.md`: talk track and screen-recording directions.
 - `output/pdf/FTEC5660_LiTS_Reproducibility_Report.pdf`: formatted report.
-- `results/summary.csv`: measured accuracy, time, token totals, and API call counts.
+- `results/summary.csv`: per-trial accuracy, time, token totals, and API call counts.
+- `source_snapshot.tar.gz`: complete source tree and raw run outputs. Extract it to inspect the full project.
 
 ## Reproduce
 
-See `QUICKSTART_REPRO.md`. Set `OPENAI_API_KEY` and `OPENAI_API_BASE` in a local `.env` file; never commit API credentials. The run script verifies the fixed dataset subset before making API calls.
+See `QUICKSTART_REPRO.md`. Set `OPENAI_API_KEY` and `OPENAI_API_BASE` in a local `.env` file; never commit API credentials. The run script verifies the fixed dataset subset before making API calls. `.env` is not included in the source snapshot.
 
 Original implementation: https://github.com/xinzhel/lits-llm
 Paper: https://arxiv.org/abs/2603.00631
